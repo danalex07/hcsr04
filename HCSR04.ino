@@ -21,7 +21,7 @@ void loop() {
  digitalWrite(trigPin, LOW);               // terminar pulso de disparo
  duracion = pulseIn(echoPin, HIGH);        // obtenemos el ancho del pulso, "pulseIn(pin, value)" es decir el tiempo que dura en llegar el eco del ultrasonido
  distancia = (duracion/2)*0.034;             // ecuación para medir la distancia en CM
-//  if (distancia == 81)
+ if (distancia == 81)
 //   { for ( pin=1 ; pin > 0; pin++)
 //         //pin = pin + 1;
 //         //Serial.print(pin);
